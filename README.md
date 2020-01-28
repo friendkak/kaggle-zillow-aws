@@ -13,3 +13,9 @@ This task was a Kaggle competition in 2017 (?}, so datasets (including a holdout
 
 ## Task and approach
 The data are already curated by Kaggle.  We will first do a study of data integrity and decide if any columns are substantially missing.  This is a regression task, so we will begin by using the Sagemaker built-in models.  Then we will try using GLM models using either R or H2O.  Finally, we will try a feed-forward NN using torch or tensorflow.  The team will split of work based on modelling technique.  While the goal of the project is to find a competitive model for the Kaggle leaderboard, part of the study is to attempt to see whether a deep learning approach is superior to a feature engineering approach.
+
+An additional complication is that the prediction task is to predict the model errors of different Zillow models for six different time periods.  The same homes are tracked for study.  Given our belief that all the Zillow models belong to the same parametric family, we will try to design a multitask problem in order to share parameters across the time periods.
+
+## Additional sources of data
+
+The Case-Schiller price index is published and is an advanced attempt to understand the price trend over time for various Metropolitan areas.  It may be handy to join this data.
