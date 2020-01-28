@@ -19,3 +19,5 @@ An additional complication is that the prediction task is to predict the model e
 ## Additional sources of data
 
 The Case-Schiller price index is published and is an advanced attempt to understand the price trend over time for various Metropolitan areas.  It may be handy to join this data.
+
+Since the dataset does not include ground truth price information, it may be helpful to augment with an existing dataset that provides sale prices, such as Boston Housing or Ames Housing datasets.  While the covariates will not match entrirely, most housing prices can be predicted fairly accurately with just a few, very common covariates, such as square footage, bedrooms, and bathrooms.
